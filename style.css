@@ -1,0 +1,50 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    background: linear-gradient(to right, #ff6a00, #ff0022, #7c00ff, #00e1ff);
+    animation: backgroundChange 1s infinite;
+    color: #fff;
+}
+
+@keyframes backgroundChange {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hidden { display: none; }
+.button { 
+    margin-top: 10px; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer; 
+    animation: buttonFlash 1s infinite;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@keyframes buttonFlash {
+    0% { background-color: #ff0022; color: #fff; }
+    50% { background-color: #00ff00; color: #000; }
+    100% { background-color: #0000ff; color: #fff; }
+}
+
+#favoriteMovie {
+    font-size: 2em;
+    text-shadow: 2px 2px #000;
+    animation: textFlash 2s infinite;
+}
+
+@keyframes textFlash {
+    0% { color: #ff6a00; }
+    50% { color: #00ff00; }
+    100% { color: #ff0022; }
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 1em;
+}

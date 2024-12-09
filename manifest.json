@@ -1,0 +1,7 @@
+{
+    "name": "Filmaros",
+    "short_name": "Filmaros",
+    "description": "ChatGPT aplikace",
+    "start_url": "/index.html",
+    "display": "standalone"
+}
